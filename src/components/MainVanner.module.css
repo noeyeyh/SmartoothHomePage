@@ -1,0 +1,194 @@
+.baseStart {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2vmin;
+  align-items: center;
+  /* transition: 0.3s ease all; */
+}
+.base {
+  position: absolute;
+  top: 13vw;
+  /*left: 50%;*/
+  height: 40vw;
+  width: 84%;
+  /* possible error */
+  margin-left: 8%;
+  /* background-color: chartreuse; */
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* possible error */
+}
+.content h3 {
+  font-family: 'AppleSDGothicNeoSB';
+  font-weight: normal;
+  font-size: 1.5rem;
+  color: #15233f;
+}
+.line {
+  margin-top: -1vh;
+  width: 3%;
+  height: 2px;
+  background-color: #15233f;
+}
+.text {
+  margin-left: 8vw;
+  margin-top: 3.1vmin;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  height: 30vw;
+  /* background-color: blue; */
+}
+.text h1 {
+  font-family: 'AppleSDGothicNeoEB';
+  font-weight: normal;
+  font-size: 3.5rem;
+  color: #15233f;
+  /* letter-spacing: -0.07em; */
+  line-height: 120%;
+}
+
+.subtitle {
+  font-family: 'AppleSDGothicNeoM';
+  font-weight: normal;
+  font-size: 1.5rem;
+  color: #e8e8e8;
+  margin-top: 1.5vmin;
+  margin-bottom: 11vmin;
+  letter-spacing: 0.03em;
+}
+.link {
+  position: absolute;
+  left: 20%;
+  margin-top: -10%;
+  font-family: 'AppleSDGothicNeoEB00';
+  font-weight: 800;
+  letter-spacing: 0.05rem;
+  font-size: 1.5rem;
+  color: #15233f;
+}
+.link img {
+  margin-left: 1.2vmin;
+  margin-bottom: 0.2vmin;
+  width: 3vmin;
+}
+.btn {
+  display: none;
+}
+.back {
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  z-index: -1;
+}
+
+@media (max-width: 1300px) {
+  .base {
+    margin-left: 5%;
+  }
+  .content h3 {
+    font-size: 1.5vw;
+  }
+  .content h1 {
+    font-size: 3vw;
+  }
+  .content .subtitle {
+    font-size: 1.5vw;
+  }
+  .link {
+    position: absolute;
+    left: 20%;
+    margin-top: -10%;
+    margin-left: 1%;
+    font-family: 'AppleSDGothicNeoEB';
+    font-size: 1.1rem;
+    color: #15233f;
+  }
+}
+
+@media (max-width: 767px) {
+  .baseStart {
+    margin-top: 8vmin;
+  }
+  .base {
+    margin-left: 0%;
+    width: 100%;
+  }
+  .base .text {
+    margin-left: 0%;
+    width: 84%;
+    margin-top: 10vh;
+  }
+  .base .content {
+    align-items: center;
+    text-align: center;
+  }
+  .base .content .line {
+    width: 7%;
+    height: 1px;
+    background-color: white;
+  }
+  .base .content h3 {
+    margin-top: 4vh;
+    font-size: 3.8vw;
+    color: #fff;
+    text-align: center;
+  }
+  .base .content h1 {
+    letter-spacing: normal;
+    font-size: 8.9vw;
+    color: white;
+  }
+
+  .base .content .subtitle {
+    font-size: 3.7vw;
+    color: #fff;
+    text-align: center;
+  }
+  .back {
+    /* background-color: chartreuse; */
+    /* header's height */
+    left: -100%;
+    width: 200%;
+    margin-right: -100%;
+    margin-top: -8%;
+    filter: brightness(60%);
+  }
+  .btnBase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #15233f;
+  }
+  .link {
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    line-height: 10vmin;
+    font-size: 5.6vw;
+    width: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    height: 10%;
+    font-family: 'AppleSDGothicNeoEB';
+    color: #15233f;
+  }
+  .btn {
+    position: absolute;
+    display: block;
+    width: 30vmin;
+    height: 15.9vmin;
+    border-radius: 10vmin;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.06);
+    background-color: #fff;
+  }
+  .link img {
+    display: none;
+  }
+}

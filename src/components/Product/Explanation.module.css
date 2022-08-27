@@ -1,0 +1,122 @@
+.base {
+  /* (1.2 * 6) */
+  margin-top: 7.2%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 8vw;
+  /* z-index: 2; */
+  transition: 0.3s ease all;
+}
+.device {
+  width: 33.6%;
+  height: auto;
+}
+.base ul {
+  margin-left: 8.5%;
+  /* background-color: chartreuse; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: flex-start; */
+}
+.base li {
+  margin: 1.8vh -1.2vw;
+  width: 100%;
+  display: flex;
+  /* background-color: navy; */
+}
+.base li img {
+  /* (3.5*3 )*/
+  width: 8.5%;
+  align-self: center;
+  height: auto;
+}
+.text {
+  margin: 0vh 0vw 1vh 2.5vw;
+  display: flex;
+  flex-direction: column;
+}
+.text h1 {
+  font-family: 'AppleSDGothicNeoSB00';
+  font-weight: normal;
+  font-size: 2.5rem;
+  letter-spacing: -0.07rem;
+  color: #000000;
+}
+.text h3 {
+  font-family: 'AppleSDGothicNeoL';
+  font-weight: normal;
+  font-size: 2rem;
+  width: 90%;
+  margin: -2vh 0vw 0vh 0vw;
+  color: #747474;
+  /* background-color: chartreuse; */
+}
+
+@media (max-width: 1300px) {
+  .device {
+    /* width: n; */
+    height: auto;
+  }
+  .text h1 {
+    font-family: 'AppleSDGothicNeoSB00';
+    font-weight: normal;
+    font-size: 1.5rem;
+    letter-spacing: -0.07rem;
+    color: #000000;
+  }
+  .text h3 {
+    font-family: 'AppleSDGothicNeoL';
+    font-weight: normal;
+    font-size: 1.3rem;
+    margin: -2vh 0vw 0vh 0vw;
+    color: #747474;
+  }
+  .base ul {
+    margin-left: 5.5%;
+  }
+}
+@media (max-width: 767px) {
+  .device {
+    display: none;
+  }
+  .base {
+    margin: -20% 0 -30% 0;
+    display: flex;
+    /* align-items: center; */
+  }
+  .base li img {
+    /* (3.5*3 )*/
+    width: 12%;
+    margin-left: -3%;
+    align-self: center;
+    height: auto;
+  }
+  .base ul {
+    margin: 40% 0 30% 0;
+    width: 100%;
+    /* background-color: chartreuse; */
+  }
+  .base ul li {
+    display: flex;
+    width: 84vmin;
+    /* background-color: navy; */
+  }
+  .text {
+    margin: 0vh 0vw 1vh 7%;
+    display: flex;
+    flex-direction: column;
+  }
+  .text h1 {
+    font-size: 1.5rem;
+  }
+  .text h3 {
+    font-family: 'AppleSDGothicNeoL';
+    width: 72vmin;
+    line-height: 1.4rem;
+    margin-top: -0.9rem;
+    font-size: 1.3rem;
+    letter-spacing: -0.04rem;
+  }
+}

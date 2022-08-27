@@ -1,0 +1,11 @@
+.ref img {
+  position: absolute;
+  /* margin-top: -80%; */
+  width: 100%;
+  z-index: 1;
+  opacity: 0.8;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+}

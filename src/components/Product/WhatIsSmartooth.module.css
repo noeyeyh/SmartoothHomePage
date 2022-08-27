@@ -1,0 +1,117 @@
+.content {
+  /* background-color: chartreuse; */
+  position: relative;
+  /* margin-left: 8.3%; */
+  /* margin-top: -2vmin; */
+  height: auto;
+  overflow: hidden;
+  /* transition: 0.3s ease all; */
+}
+.content img {
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  /* background-color: navy; */
+}
+
+.content .text {
+  position: absolute;
+  top: 50%;
+  left: 8.3%;
+  transform: translate(0%, -50%);
+  /* background-color: chartreuse; */
+}
+.content .title {
+  font-family: 'AppleSDGothicNeoB';
+  color: white;
+  font-weight: normal;
+  font-size: 3rem;
+  /* background-color: chartreuse; */
+}
+.text .line {
+  margin: 0 0 0 0.5vmin;
+  width: 8%;
+  height: 3px;
+  background: #ffffff;
+}
+.text h3 {
+  color: #ffffff;
+  width: 60vmin;
+  font-weight: 200;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  /* background-color: chartreuse; */
+}
+@media (max-width: 1300px) {
+  .content .title {
+    font-family: 'AppleSDGothicNeoB';
+    font-weight: normal;
+    font-size: 2.2rem;
+  }
+  .text .line {
+    width: 10%;
+    height: 2px;
+  }
+  .text h3 {
+    font-family: 'AppleSDGothicNeoT';
+    font-weight: 200;
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    width: 60vmin;
+  }
+}
+
+@media (max-width: 767px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: -4vmin;
+    margin-left: 0;
+    height: 80vmin;
+    min-height: 80vw;
+    /* background-color: chartreuse; */
+    align-items: center;
+  }
+  .content .back {
+    position: absolute;
+    width: 170%;
+    height: 100%;
+    left: -70%;
+    filter: brightness(60%);
+  }
+  .content .text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 15%;
+    left: auto;
+    margin: 0;
+    width: 84%;
+    transform: translate(0%);
+    /* margin-top: 10vh; */
+  }
+  .content .title {
+    font-size: 4.5vmin;
+    font-weight: 200;
+    color: #fff;
+    text-align: center;
+  }
+  .content .text .line {
+    margin-top: 0.5vmin;
+    width: 14%;
+    height: 1px;
+    background-color: white;
+  }
+
+  .content .text h3 {
+    width: 100%;
+    text-align: center;
+    margin-top: 20vmin;
+    color: #fff;
+    font-weight: 300;
+    font-size: 5vmin;
+    line-height: 5.5vmin;
+  }
+}

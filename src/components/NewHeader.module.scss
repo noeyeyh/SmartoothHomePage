@@ -1,0 +1,153 @@
+@import './../styles/variables.scss';
+
+.header {
+  background: #fff;
+  width: inherit;
+  // possible error
+  height: 12vmin;
+  padding: 0 1.5rem;
+  // margin-bottom: -13vmin;
+  @include breakpoint(md) {
+    padding: 0 3rem;
+  }
+  transition: 0.3s ease all;
+
+  &__content {
+    overflow: hidden;
+    color: #15233f;
+    margin: 0 auto;
+    max-width: 1920px;
+    height: 100%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 100;
+    // background: chartreuse;
+
+    &__logo {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 12%);
+      z-index: 90;
+    }
+    &__logo img {
+      width: 13vmin;
+      height: auto;
+      transition: 0.3s ease all;
+      z-index: 90;
+      &:hover {
+        width: 15vmin;
+      }
+    }
+
+    &__nav {
+      top: 0;
+      right: 100%; //숨기는 코드 **************************
+      bottom: 0;
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      background: rgba(29, 29, 29, 0.9);
+      transform: translate(0px) !important;
+      -o-transform: translate(0px);
+      -moz-transform: translate(0px);
+      -ms-transform: translate(0px);
+      -webkit-transform: translate(0px);
+
+      // -webkit-transition: -webkit-transform 0.3s ease;
+      // -moz-transition: transform 0.3s ease;
+      // -o-transition: transform 0.3s ease;
+      transition: transform 0.3s ease;
+
+      @include breakpoint(md) {
+        color: #15233f;
+        transform: none;
+        flex-direction: row;
+        background: transparent;
+        justify-content: flex-end;
+        width: 100%;
+        height: 100%;
+        position: static;
+        // background-color: chartreuse;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30vmin;
+        // height: 40vmin;
+        // background-color: chartreuse;
+        @include breakpoint(md) {
+          flex-direction: row;
+          align-items: center;
+          margin-bottom: 0;
+          margin-right: calc(0.5rem + #{16px});
+        }
+        li {
+          @media (max-width: 767px) {
+            margin-left: 0.5vw;
+            margin-bottom: 10vmin;
+            font-size: 2rem;
+          }
+          a {
+            text-decoration: none;
+            color: inherit;
+            padding: 0.75rem 1.25rem;
+            border-radius: 6px;
+            margin-left: 3vw;
+            transition: 0.3s ease all;
+            @media (max-width: 1000px) {
+              margin-left: 0.5vw;
+            }
+            &:hover {
+              background: rgba(#15233f, 1);
+              color: #fff;
+            }
+            &:active {
+              border-radius: calc(10px);
+              background: linear-gradient(
+                rgba(255, 255, 255, 0.1),
+                rgba(255, 255, 255, 0.2)
+              );
+            }
+          }
+        }
+      }
+      &.isMenu {
+        // transform: translate(100%); //나오는 구문
+        transform: translate(100%) !important;
+        -o-transform: translate(100%) !important;
+        -moz-transform: translate(100%) !important;
+        -ms-transform: translate(100%) !important;
+        -webkit-transform: translate(100%) !important;
+      }
+    }
+
+    &__toggle {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      font-size: 2rem;
+      margin: 0;
+      transform: translate(0, 5%);
+      transition: 0.3s ease all;
+      position: relative;
+
+      &:hover {
+        color: #1e3257;
+      }
+      @include breakpoint(md) {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,200 @@
+.base {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40vmin;
+  transition: 0.3s ease all;
+}
+.base .content .linearSmartooth {
+  position: relative;
+  width: 80%;
+  height: auto;
+}
+.content {
+  margin: 0;
+  width: 100%;
+  margin-bottom: 20vmin;
+}
+.base .content .right .title {
+  font-family: 'AppleSDGothicNeoSB00';
+  font-weight: 600;
+  font-size: 5vmin;
+  margin-top: -20vmin;
+}
+.content li {
+  display: flex;
+  /* background-color: chartreuse; */
+  align-items: flex-start;
+  margin: 3vmin 1vmin;
+}
+.base .content img {
+  position: absolute;
+  left: 50%;
+  width: 4vmin;
+  height: 4vmin;
+  transform: translate(-50%);
+}
+.base .content b {
+  font-family: 'AppleSDGothicNEOSB00';
+  font-weight: 700;
+}
+.base .content h2 {
+  margin: 0 2vmin;
+  font-family: 'AppleSDGothicNeoEB00';
+  font-weight: 600;
+  margin-top: 0.5vmin;
+  font-size: 2.3vmin;
+  /* background-color: green; */
+}
+.base .content h3 {
+  font-family: 'AppleSDGothicNEOT00';
+  font-weight: normal;
+  font-size: 2.5vmin;
+  margin: 0.2vmin 0 0 0;
+  /* background-color: green; */
+}
+
+.content .right {
+  margin-left: 52%;
+  flex-direction: row;
+}
+.content .left {
+  margin-right: 55%;
+  flex-direction: row-reverse;
+  text-align: end;
+}
+.lineVertical {
+  width: 4px;
+  position: absolute;
+  margin-top: -50%;
+  left: 50%;
+  transform: translate(-60%);
+  height: 260vmin;
+  background-color: #747474;
+  z-index: -1;
+  overflow: hidden;
+}
+.lineHorizontal {
+  width: 100%;
+  height: 60vmin;
+  border-top: 3px solid #747474;
+  background-color: white;
+  margin-bottom: -40vmin;
+  z-index: 5;
+}
+.base .content .tooLong {
+  font-family: 'AppleSDGothicNEOT00';
+  font-weight: normal;
+  font-size: 2.3vmin;
+}
+
+@media (max-width: 1300px) {
+  .content ul {
+    /* display: flex; */
+    align-self: center;
+    /* possible error */
+    /* background-color: chartreuse; */
+  }
+  .base .content b {
+    font-family: 'AppleSDGothicNEOSB00';
+    font-weight: 500;
+  }
+
+  .base .content h2 {
+    margin: 0 2vmin;
+    font-family: 'AppleSDGothicNeoEB00';
+    font-weight: 800;
+    margin-top: 0.6vmin;
+    font-size: 2vmin;
+    /* background-color: green; */
+  }
+  .base .content h3 {
+    font-family: 'AppleSDGothicNEOT00';
+    font-weight: 300;
+    font-size: 2.5vmin;
+    margin: 0.2vmin 0 0 0;
+    width: 62vmin;
+    /* background-color: green; */
+  }
+}
+@media (max-width: 1100px) {
+  .lineVertical {
+    margin-top: -40%;
+  }
+}
+@media (max-width: 1000px) {
+  .lineVertical {
+    height: 310vmin;
+  }
+}
+
+@media (max-width: 767px) {
+  .base .content .lineVertical {
+    height: 280vmin;
+    transform: translate(-60%, 7%);
+    margin-top: -10vmin;
+    width: 3px;
+    left: 8%;
+    /* margin-bottom: -30vmin; */
+  }
+  .base .content .right .title {
+    width: 100%;
+    text-align: center;
+  }
+  .base {
+    margin-top: 50vmin;
+  }
+  .base .content {
+    margin-bottom: 0;
+  }
+  .base .content .linearSmartooth {
+    display: none;
+  }
+  .content .right {
+    margin-left: 0%;
+    flex-direction: row;
+    width: 80vw;
+    /* background-color: chartreuse; */
+  }
+  .content .left {
+    margin-left: 0%;
+    text-align: start;
+    flex-direction: row;
+    width: 80vw;
+    /* background-color: chartreuse; */
+  }
+  .base .content img {
+    left: 8%;
+    width: 5vmin;
+    height: 5vmin;
+  }
+  .base .content b {
+    font-family: 'AppleSDGothicNEOSB00';
+    font-weight: 500;
+  }
+
+  .base .content h2 {
+    font-family: 'AppleSDGothicNeoEB00';
+    font-weight: 800;
+    /* text-align: center; */
+    margin: 0.5% 5% 8.5% 6.5vmin;
+    font-size: 3.5vmin;
+    /* background-color: green; */
+  }
+  .base .content h3 {
+    font-family: 'AppleSDGothicNEOT00';
+    position: absolute;
+    left: 32%;
+    font-weight: 300;
+    font-size: 3.3vmin;
+    letter-spacing: -0.1vmin;
+    width: 65vw;
+    margin: 0.5vmin 0 0vmin 0 !important;
+    /* background-color: green; */
+  }
+  .lineHorizontal {
+    margin-bottom: -50vmin;
+    z-index: 5;
+    border-top: 2px solid #747474;
+  }
+}

@@ -1,0 +1,122 @@
+.bg {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 50;
+  /* transition: 0.3s ease all; */
+}
+.base {
+  width: 84vw;
+  margin-top: 5vh;
+  margin-left: 8vw;
+}
+.base h2 {
+  font-family: 'AppleSDGothicNeoEB';
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 0.97;
+  color: #1e3257;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  height: 32%;
+  /* background-color: chartreuse; */
+}
+.text li {
+  /* margin-bottom: 1vmin; */
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.text h1 {
+  font-family: 'AppleSDGothicNeoEB00';
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  /* impo */
+}
+
+.text h3 {
+  font-family: 'AppleSDGothicNeoL00';
+  font-weight: 400;
+  position: absolute;
+  width: 62vw;
+  left: 18%;
+  margin-top: 1.4vh;
+  /* impo */
+  font-size: 1rem;
+  /* transform: translate(0, -10%); */
+  /* background-color: chartreuse; */
+}
+.line {
+  display: none;
+}
+
+@media (max-width: 1300px) {
+  .text h3 {
+    left: 25%;
+  }
+}
+@media (max-width: 767px) {
+  .bg {
+    z-index: 50;
+  }
+  .base {
+    color: black;
+    margin-left: 10vw;
+    margin-top: 10vh;
+    z-index: 50;
+    /* background-color: chartreuse; */
+  }
+  .base h2 {
+    font-family: 'AppleSDGothicNeoL00';
+    position: absolute;
+    font-weight: 300;
+    text-align: center;
+    left: 50%;
+    font-size: 6vmin;
+    line-height: 0.97;
+    transform: translate(-50%, -100%);
+    color: #1e3257;
+  }
+  .text h1 {
+    font-family: 'AppleSDGothicNeoEB00';
+    font-weight: bold;
+    font-size: 4vmin;
+    /* impo */
+  }
+  .content {
+    margin-top: 12vmin;
+    height: 32%;
+  }
+  .text h3 {
+    margin-top: 3.5%;
+    font-family: 'AppleSDGothicNeoM00';
+    position: absolute;
+    font-weight: 400;
+    left: 28%;
+    letter-spacing: -0.05vmin;
+    /* impo */
+    font-size: 3.5vmin;
+    /* background-color: chartreuse; */
+  }
+  .text li {
+    margin-bottom: 2vmin;
+  }
+  .content ul {
+    padding-left: 0;
+  }
+  .line {
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-top: 9vmin;
+    transform: translate(-50%, -100%);
+    width: 7%;
+    height: 1px;
+    background-color: #1e3257;
+  }
+}

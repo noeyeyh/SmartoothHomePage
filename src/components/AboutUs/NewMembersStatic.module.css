@@ -1,0 +1,104 @@
+.container {
+  margin: 8vh 9%;
+  padding: 0px 5vmin 2vmin 5vmin;
+  width: 82%;
+  display: flex;
+  flex-flow: row wrap;
+  /* background-color: chartreuse; */
+  justify-content: center;
+  align-items: center;
+}
+.base {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 18vw;
+  height: 20vw;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 20px 1.8rem rgba(0, 0, 0, 0.1);
+  margin: 1vw 2vw 8vh 0vw;
+}
+.base img {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+}
+.base .profileImg {
+  width: 50%;
+  z-index: 3;
+  height: auto;
+  position: inherit;
+  transform: translate(0, -50%);
+  margin-bottom: -23%;
+  /* top: 50%; */
+}
+.base .text {
+  text-align: center;
+  width: 100%;
+}
+.base .text h1 {
+  font-family: 'AppleSDGothicNeoEB00';
+  font-weight: 500;
+  font-size: 1.8rem;
+  /* line-height: -2rem; */
+  margin-top: -2%;
+}
+.base .text h2 {
+  font-family: 'AppleSDGothicNeoM00';
+  font-weight: 200;
+  color: #747474;
+  font-size: 1.5rem;
+  margin-top: -5%;
+  margin-bottom: 15%;
+}
+
+@media (max-width: 1300px) {
+  .base .text h1 {
+    font-size: 1.4rem;
+    /* font-weight: 400; */
+    line-height: 1.4rem;
+    margin-top: -0.5vh;
+  }
+  .base .text h2 {
+    font-size: 1rem;
+    margin-top: 0.5%;
+  }
+}
+@media (max-width: 950px) {
+  .container {
+    margin: 15% 0% 20% 5%;
+    /* possible error */
+    padding: 0px 2vmin 2vmin 2vmin;
+    width: 90%;
+    overflow: hidden;
+  }
+  .base img {
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+  }
+  .base {
+    width: 18vw;
+    margin: 1vw 4vw 4vw 0vw;
+    height: 21vw;
+    border-radius: 8px;
+    box-shadow: 0px 10px 0.5rem rgba(0, 0, 0, 0.1);
+  }
+  .base .text h1 {
+    font-size: 2.2vmin;
+    font-weight: normal;
+    /* letter-spacing: 0.02rem; */
+    /* line-height: -2rem; */
+    line-height: 3vmin;
+    margin-top: +0vh;
+  }
+  .base .text h2 {
+    font-weight: 300;
+    font-size: 1.8vmin;
+    margin-top: -1vmin;
+    line-height: 1.9vmin;
+  }
+}

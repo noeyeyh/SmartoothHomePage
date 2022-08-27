@@ -1,0 +1,328 @@
+.Steps img {
+  width: 31.5vw;
+  height: auto;
+}
+.Step1Content div {
+  font-size: 1.4rem;
+  color: #747474;
+  font-family: 'AppleSDGothicNeoB';
+  font-weight: 600;
+  margin: 1vw 0;
+}
+.Step2Content div {
+  font-size: 1.4rem;
+  color: #747474;
+  font-family: 'AppleSDGothicNeoB';
+  font-weight: 600;
+  margin: 1vw 0;
+}
+.Step3Content div {
+  font-size: 1.4rem;
+  color: #747474;
+  font-family: 'AppleSDGothicNeoB';
+  font-weight: 600;
+  margin: 1vw 0;
+}
+.Steps h1 {
+  font-size: 2.2rem;
+  margin-top: -1.5vmin;
+  font-family: 'AppleSDGothicNeoL';
+}
+
+.Steps .done {
+  margin-top: 45%;
+  color: #15233f;
+  font-family: 'AppleSDGothicNeoM';
+  align-self: center;
+  font-size: 9.8rem;
+  letter-spacing: 0.3rem;
+}
+
+.Step1Base {
+  position: absolute;
+  /* top: 20vh; */
+  width: 25vw;
+  height: 21vw;
+  background-color: #f7f7f7;
+  z-index: -2;
+}
+
+.Step1Content {
+  margin-left: 7.5vw;
+  margin-top: -15vmin;
+  /* position: absolute; */
+  display: flex;
+  flex-direction: column;
+}
+
+.Step2Base {
+  position: absolute;
+  /* possible error */
+  margin-top: -9.5vmin;
+  width: 36.5vw;
+  height: 30vw;
+  background-color: #f7f7f7;
+  z-index: -2;
+}
+
+.Step2Content {
+  margin-left: 16.5vw;
+  margin-top: -17vh;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  /* background-color: chartreuse; */
+}
+
+.Step3Base {
+  position: absolute;
+  margin-left: 25vmin;
+  margin-top: 17vmin;
+  width: 42vw;
+  background-color: #f7f7f7;
+  /* possible error */
+  height: 20vw;
+  z-index: -3;
+}
+
+.Step3Content {
+  /* margin-top: -18vmin; */
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  /* background-color: chartreuse; */
+}
+.Steps {
+  display: flex;
+  margin-top: 10%;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s ease all;
+  /* background-color: chartreuse; */
+  overflow: hidden;
+}
+.Step1 {
+  margin-top: 10%;
+  align-self: flex-start;
+  margin-left: 8vw;
+  will-change: transform;
+  will-change: opacity;
+  /* background-color: chartreuse; */
+}
+.Step2 {
+  /* display: flex; */
+  margin-top: 20%;
+  align-self: flex-end;
+  z-index: 3;
+  margin-right: 58vw;
+
+  will-change: transform;
+  will-change: opacity;
+  /* background-color: chartreuse; */
+}
+.Step3 {
+  margin-top: 35%;
+  /* gap */
+  align-self: flex-start;
+  margin-left: 8vw;
+  z-index: 3;
+  will-change: transform;
+  will-change: opacity;
+  /* background-color: chartreuse; */
+}
+
+@media (max-width: 1920) {
+  .Step1 {
+    margin-top: 20%;
+    align-self: flex-start;
+    margin-left: 8vw;
+    /* background-color: chartreuse; */
+  }
+  .Step2 {
+    margin-top: 20%;
+    align-self: flex-end;
+    z-index: 3;
+    margin-right: 58vw;
+    /* background-color: chartreuse; */
+  }
+  .Step3 {
+    margin-top: 30%;
+    /* gap */
+    align-self: flex-start;
+    margin-left: 8vw;
+    z-index: 3;
+    /* background-color: chartreuse; */
+  }
+}
+
+@media (max-width: 1300px) {
+  .Steps {
+    margin-top: 0%;
+  }
+  .Step1 {
+    margin-top: 50%;
+    align-self: flex-start;
+    margin-left: 8vw;
+    /* background-color: chartreuse; */
+  }
+  .Step2 {
+    margin-top: 20%;
+    align-self: flex-end;
+    z-index: 3;
+    margin-right: 58vw;
+    /* overflow: hidden; */
+    /* background-color: chartreuse; */
+  }
+  .Step3 {
+    margin-top: 30%;
+    /* gap */
+    align-self: flex-start;
+    margin-left: 18vw;
+    z-index: 3;
+    /* background-color: chartreuse; */
+  }
+  .Steps h1 {
+    font-size: 2.5vw;
+  }
+  .Steps .done {
+    margin-top: 80%;
+    font-size: 12vw;
+    letter-spacing: +0.08rem;
+  }
+}
+@media (max-width: 1100px) {
+  .Step1 {
+    margin-top: 30%;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+  .Step2 {
+    transform: none !important;
+    opacity: 1 !important;
+    margin-right: 58vw;
+  }
+  .Step3 {
+    margin-top: 30%;
+    transform: none !important;
+    margin-left: 2vw;
+    opacity: 1 !important;
+  }
+  .done {
+    opacity: 1 !important;
+  }
+}
+@media (max-width: 767px) {
+  .Steps {
+    margin-top: 25vmin;
+  }
+  .Steps img {
+    position: absolute;
+    width: 56vw;
+    height: auto;
+  }
+  .Steps h1 {
+    font-family: 'AppleSDGothicNeoR00';
+    font-weight: 400;
+    font-size: 7vmin;
+    margin-top: 30.5vw;
+  }
+
+  .Step1Content div {
+    font-family: 'AppleSDGothicNeoT00';
+    font-weight: 300;
+    margin: 10vw -5vw -5vw 0;
+    transform: rotate(90deg);
+    width: fit-content;
+    font-size: 5vw;
+    align-self: flex-end;
+  }
+  .Step2Content div {
+    font-family: 'AppleSDGothicNeoT00';
+    font-weight: 300;
+    margin-left: -5vw;
+    margin-top: 5vw;
+    transform: rotate(-90deg);
+    align-self: flex-start;
+    width: fit-content;
+    font-size: 5vw;
+  }
+  .Step3Content div {
+    font-family: 'AppleSDGothicNeoT00';
+    font-weight: 300;
+    margin-right: -5vw;
+    margin-top: 5vw;
+    transform: rotate(90deg);
+    width: fit-content;
+    font-size: 5vw;
+    align-self: flex-end;
+  }
+
+  .Step1Content {
+    width: 80.4vw;
+    height: 60vw;
+    position: relative;
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .Step2Content {
+    width: 80.4vw;
+    height: 60vw;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-end;
+
+    margin: 0;
+  }
+  .Step3Content {
+    width: 80.4vw;
+    height: 60vw;
+    position: relative;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .Step1Content h1 {
+    text-align: end;
+  }
+  .Step3Content h1 {
+    text-align: end;
+  }
+
+  .Step1 {
+    margin: 0;
+    margin-top: 10vmin;
+    align-self: center;
+  }
+  .Step2 {
+    margin: 0;
+    margin-top: 5vmin;
+    align-self: center;
+  }
+  .Step3 {
+    margin: 0;
+    margin-top: 10vmin;
+    align-self: center;
+  }
+  .Step1Base {
+    display: none;
+  }
+  .Step2Base {
+    display: none;
+  }
+  .Step3Base {
+    display: none;
+  }
+  .Steps h2 {
+    margin-top: 30vmin;
+    font-size: 12vw;
+    letter-spacing: +0.05rem;
+  }
+  /* .lineVertical {
+      width: 5%;
+      height: 70vw;
+      background-color: chartreuse;
+      z-index: -1;
+  
+    } */
+}

@@ -1,0 +1,20 @@
+.base {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.base img {
+  /* background-color: chartreuse; */
+  margin-top: 20vh;
+  width: 40vw;
+}
+
+@media (max-width: 900px) {
+  .base img {
+    /* background-color: chartreuse; */
+    margin-top: 20vh;
+    width: 100vw;
+  }
+}

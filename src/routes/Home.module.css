@@ -1,0 +1,54 @@
+.ref img {
+  position: absolute;
+  /* margin-top: -80%; */
+  width: 100%;
+  z-index: 1;
+  opacity: 0.8;
+}
+
+.Vanner2 {
+  position: relative;
+  margin-left: 8%;
+  height: 80vh;
+  background-color: #fff;
+}
+.Vanner2 img {
+  width: 100%;
+  /* background-size: cover; */
+  z-index: -1;
+}
+.Vanner2__text {
+  margin-left: 9.5%;
+  color: #fff;
+  position: absolute;
+  top: 25%;
+  z-index: 2;
+}
+
+.Vanner2__text h1 {
+  font-size: 3.3em;
+  letter-spacing: 0.05em;
+  font-family: "AppleSDGothicNeoB";
+}
+
+.Vanner2__line {
+  margin-top: -3%;
+  width: 15%;
+  height: 4px;
+  background: #ffffff;
+}
+.Vanner2__text h3 {
+  margin-top: 10%;
+  font-size: 2.2em;
+  font-family: "AppleSDGothicNeoL";
+  font-weight: 100;
+  line-height: 110%;
+  letter-spacing: 0.01em;
+}
+
+.test {
+  width: 100vw;
+  height: 20vh;
+  background-color: chartreuse;
+  z-index: 2;
+}
