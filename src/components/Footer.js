@@ -56,9 +56,6 @@ const Content = styled.div`
   @media (max-width: 767px) {
     margin-top: 12vmin;
     height: 32%;
-  }
-
-  @media (max-width: 767px) {
     padding-left: 0;
   }
 `
@@ -74,6 +71,7 @@ const TextList = styled.div`
 `;
 
 const Heading1 = styled.h1`
+  width: 40px;
   font-family: 'AppleSDGothicNeoEB00';
   font-weight: 600;
   font-size: 1rem;
@@ -98,12 +96,11 @@ const Heading3 = styled.h3`
   margin-top: 1.4vh;
   margin-left: 70px;
   width: 62vw;
-  position: absolute;
-
   display: block;
 
   @media (max-width: 1300px) {
     left: 25%;
+    position: absolute;
   }
 
   @media (max-width: 767px) {
